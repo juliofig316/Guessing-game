@@ -6,25 +6,28 @@
     <title>Guessing game</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
-    <script src='index.js'></script>
 </head>
 <body>
     <header>
         <h1>guessing game</h1>
     </header>
-    <h2>Previous guesses</h2>
+    <h2>Guess a number between 1-100</h2>
     <div class="numbers">
-        <ul>23</ul>
-        <ul>2</ul>
-        <ul>5</ul>
-        <ul>1</ul>
+        <ul>
+            <li>-</li>
+            <li>-</li>
+            <li>-</li>
+            <li>-</li>
+            <li>-</li>
+        </ul>
     </div>
-    <h3>Guess a number between 1-100</h3>
+    <h3>Previous guesses</h3>
     <div class="guesses">
-        <input id="guess" type="text" value="Enter guess here">
+        <input id="guess" type="text" placeholder="Enter guess here">
         <button id="submit" type="button">Submit guess</button>
         <button id="again" type="button">Play again</button>
         <button id="hint" type="button">Hint</button>
     </div>
+    <script src='index.js'></script>
 </body>
 </html>

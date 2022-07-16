@@ -28,10 +28,20 @@ h3 {
 }
 
 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+li {
     background-color: white;
     text-align: center;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
     border: solid black 1px;
+    list-style-type: none;
+    margin: 20px;
+    padding: 10px;
 }
 
 .guesses {
@@ -50,4 +60,5 @@ button {
 button:hover {
     transform: rotate(360deg);
     transform: scale(1.01);
+    background-color: whitesmoke;
 }
