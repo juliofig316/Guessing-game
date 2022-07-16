@@ -1,0 +1,53 @@
+body {
+    margin-top: 25%;
+    font-family: cursive;
+    background-color: rgba(127, 255, 212, 0.39);
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-size: 45px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: aquamarine;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    border: solid black 1px;
+}
+
+.guesses {
+    align-content: center;
+    text-align: center;
+}
+
+button {
+    border-radius: 3px;
+    border: none;
+    background-color: aquamarine;
+    color: black;
+    transition: all 0.3s ease
+}
+
+button:hover {
+    transform: rotate(360deg);
+    transform: scale(1.01);
+}
