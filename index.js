@@ -5,7 +5,7 @@ const submit = document.getElementById('submit');
 
 const guesses = document.getElementsByTagName('li');
 
-const inputFeedback = document.getElementById('feedback');
+const inputFeedback = document.getElementsByTagName('h2');
 
 const theNumber = Math.floor(Math.random() * 100) + 1;
 
@@ -23,13 +23,15 @@ submit.addEventListener('click', function(event) {
 });
 
 submit.addEventListener("Click", function(event){
+    var userInput = document.getElementById('guess');
+    var inputFeedback = document.getElementsByTagName('h2');
     if (userInput.value === theNumber) {
         inputFeedback.innerText("You guessed correctly!")
     } else if (userInput.value < theNumber) {
         inputFeedback.innerText("You guessed too low!") 
     } else if (userInput.value > theNumber) {
         inputFeedback.innerText("You guessed too high!")
-        }
+    }
     });
 
 // restart the game from 0
